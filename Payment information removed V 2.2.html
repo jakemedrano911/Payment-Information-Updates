@@ -31,12 +31,14 @@
 
     .button { display:inline-block; background:#2F3E75; color:#ffffff !important; font:700 14px/1.5 Arial, Helvetica, sans-serif; padding:14px 28px; border-radius:4px; text-decoration:none; margin:12px 0 10px; }
 
-    .contact-box { border:1px solid #d6e4f5; background:#ffffff; border-radius:12px; padding:28px; margin:28px 0; font:400 14px/1.5 Arial, Helvetica, sans-serif; }
-    .contact-item { display:flex; align-items:flex-start; margin-bottom:18px; }
-    .contact-item:last-child { margin-bottom:0; }
-    .contact-item svg { margin-right:14px; flex-shrink:0; display:block; }
-    .contact-text a { font:700 14px Arial, Helvetica, sans-serif; color:#2F3E75; text-decoration:none; display:block; margin-bottom:4px; }
-    .contact-text span { display:block; font:400 14px Arial, Helvetica, sans-serif; color:#555; margin-top:2px; }
+    .contact-box { background-color: #f9f9ff; border: 1px solid #e0e0f5; border-radius: 8px; padding: 20px 30px; max-width: 600px; margin: 12px auto 0 auto; box-shadow: none; }
+    .contact-box h4 { font-size: 15px; color: #364F6B; font-weight: bold; margin: 0 0 6px 0; }
+    .contact-box p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 20px; }
+    .contact-item { display: flex; align-items: center; margin-bottom: 22px; }
+    .contact-item svg { flex-shrink: 0; margin-right: 12px; }
+    .contact-text { display: flex; flex-direction: column; }
+    .contact-text a { font-size: 16px; font-weight: bold; color: #2F3E75; margin-bottom: 4px; }
+    .contact-text span { font-size: 14px; color: #555; }
 
     .footer { padding:24px 24px 36px; font:400 12px/1.5 Arial, Helvetica, sans-serif; color:#4b5563; text-align:center; background:#f0f0f0; }
     .footer a { color:#2F3E75; text-decoration:underline; }
@@ -95,34 +97,34 @@
             <p style="font-size:14px; color:#555; margin:8px 0 0; font:500 14px/1.5 Arial, Helvetica, sans-serif;">Account Number: <span style="font-weight:400; color:#555;">{Portfolio}-{Account Number}</span></p>
           </div>
 
-          <table role="presentation" width="100%" class="contact-box" cellpadding="0" cellspacing="0">
-            <tr>
-              <td>
-                <p class="section-title" style="margin-bottom:16px;">Need Assistance?</p>
-                <div style="margin-bottom: 28px;">
-                  <h4 style="font:700 17px Arial, Helvetica, sans-serif; margin:0 0 10px; color:#2F3E75;">For Coverage Questions:</h4>
-                  <p style="margin:0; font:400 14px/1.5 Arial, Helvetica, sans-serif;">You can reach your Agent at:<br><strong>[Agent Name]</strong><br><strong>[Agent Phone]</strong><br><strong>[Agent Email]</strong></p>
-                </div>
-                <div style="margin-bottom: 28px;">
-                  <h4 style="font:700 17px Arial, Helvetica, sans-serif; margin:0 0 10px; color:#2F3E75;">For Billing or Payment Questions:</h4>
-                  <p style="margin:0 0 16px; font:400 14px/1.5 Arial, Helvetica, sans-serif;">We are available from 6 AM to 5 PM Pacific Time, Monday through Friday.</p>
-                </div>
+          <h2 style="margin-top: 24px;">Need Assistance?</h2>
+          <div class="contact-box">
+            <div style="margin-bottom: 16px;">
+              <h4>For Coverage Questions:</h4>
+              <p>You can reach your Agent at:<br/><strong>[Agent Name]</strong><br/><strong>[Agent Phone]</strong><br/><strong>[Agent Email]</strong></p>
+            </div>
+            <div style="margin-bottom: 16px; padding-top: 14px; border-top: 1px solid #e0e0f5;">
+              <h4>To Make a Claim:</h4>
+              <p>Please contact:<br/><strong>[Admin Name]</strong><br/><strong>[Admin Phone]</strong></p>
+            </div>
+            <div style="margin-bottom: 16px; padding-top: 14px; border-top: 1px solid #e0e0f5;">
+              <h4>For Billing or Payment Questions:</h4>
+              <p style="margin-bottom: 16px;">We are available from 6 AM to 5 PM Pacific Time, Monday through Friday.</p>
+            </div>
 
-                <div class="contact-item">
-                  <svg fill="#2F3E75" height="45" width="45" viewBox="0 0 24 24"><path d="M20 2H4C2.897 2 2 2.897 2 4v14c0 1.103.897 2 2 2h14l4 4V4c0-1.103-.897-2-2-2zM4 4h16v15.172L18.828 18H4V4z"/></svg>
-                  <div class="contact-text"><a href="#">Chat with us</a><span>Use our 24/7 chat assistant for common questions and requests, or connect with a representative during business hours.</span></div>
-                </div>
-                <div class="contact-item">
-                  <svg fill="#2F3E75" height="45" width="45" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c-1.1-.9-2-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                  <div class="contact-text"><a href="mailto:support@example.com">Email us at [Email]</a><span>Send us your questions and we will respond within 1 business day.</span></div>
-                </div>
-                <div class="contact-item">
-                  <svg fill="#2F3E75" height="45" width="45" viewBox="0 0 24 24"><path d="M6.62 10.79a15.093 15.093 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.08 21 3 13.92 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.20 2.42.57 3.54a1 1 0 0 1-.24 1.05l-2.21 2.2z"/></svg>
-                  <div class="contact-text"><a href="tel:18005551234">Call us at [Company Phone]</a><span>Our automated phone system is available 24/7, or you can speak with a representative during business hours.</span></div>
-                </div>
-              </td>
-            </tr>
-          </table>
+            <div class="contact-item">
+              <svg fill="#364F6B" height="45" width="45" viewBox="0 0 24 24"><path d="M20 2H4C2.897 2 2 2.897 2 4v14c0 1.103.897 2 2 2h14l4 4V4c0-1.103-.897-2-2-2zM4 4h16v15.172L18.828 18H4V4z"/></svg>
+              <div class="contact-text"><a href="#">Chat with us</a><span>Use our 24/7 chat assistant for common questions and requests, or connect with a representative during business hours.</span></div>
+            </div>
+            <div class="contact-item">
+              <svg fill="#364F6B" height="45" width="45" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c-1.1-.9-2-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <div class="contact-text"><a href="mailto:support@example.com">Email us at [Email]</a><span>Send us your questions and we will respond within 1 business day.</span></div>
+            </div>
+            <div class="contact-item" style="margin-bottom: 0;">
+              <svg fill="#364F6B" height="45" width="45" viewBox="0 0 24 24"><path d="M6.62 10.79a15.093 15.093 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.08 21 3 13.92 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.2 2.42.57 3.54a1 1 0 0 1-.24 1.05l-2.21 2.2z"/></svg>
+              <div class="contact-text"><a href="tel:18005551234">Call us at [Company Phone]</a><span>Our automated phone system is available 24/7, or you can speak with a representative during business hours.</span></div>
+            </div>
+          </div>
 
           <p style="font-size:14px;">Thank you,<br>[Company Name]</p>
         </td>
