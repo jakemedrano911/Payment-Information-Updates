@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Your Payment Settings Changed</title>
+  <title>Your payment information has changed.</title>
   <style>
     :root { color-scheme: light; supported-color-schemes: light; }
     html, body { background-color:#f4f6fb; margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; }
@@ -63,14 +63,14 @@
       <tr>
         <td class="header">
           <div class="logo-placeholder">Company Logo</div>
-          <h1 class="title" style="color:#2F3E75!important;">Your Payment Information Has Changed</h1>
+          <h1 class="title" style="color:#2F3E75!important;">Your payment information has changed.</h1>
         </td>
       </tr>
 
       <tr>
         <td class="body" style="color:#1a1a1a!important;">
           <p style="margin:8px 0 0 0; font-size:16px;">[Customer Name],</p>
-          <p style="font-size:16px;">Payment information for your [Company Name] account [Account Number] was [Added/Updated] on [Date of Change].</p>
+          <p style="font-size:16px;">Payment information for your [Company Name] account [Account Number] was [Added/Updated/Removed] on [Date of Change].</p>
 
           <p style="font:700 21px/1.3 Arial, Helvetica, sans-serif; color:#2F3E75; margin:24px 0 16px 0;">Payment Information</p>
           <table role="presentation" width="100%" class="card" cellpadding="0" cellspacing="0" bgcolor="#f9f9ff" style="background-color:#f9f9ff!important;">
@@ -79,11 +79,15 @@
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                   <tr class="row">
                     <td class="label">Autopay Status</td>
-                    <td class="value">Enrolled</td>
+                    <td class="value">[Enrolled/ Not Enrolled]</td>
                   </tr>
                   <tr class="row">
                     <td class="label">Payment Method</td>
                     <td class="value">[Visa/ACH ending in 1234]</td>
+                  </tr>
+                  <tr class="row">
+                    <td class="label">Method Removed</td>
+                    <td class="value">Card/Bank ending in 1234</td>
                   </tr>
                   <tr class="row">
                     <td class="label">Next Payment</td>
@@ -95,7 +99,8 @@
             </tr>
           </table>
 
-          <p style="text-align: center; margin: 12px 0; font-size:14px; color:#555;">Click below to view payment history or update payment information</p>
+          <p style="text-align: center; margin: 12px 0; font-size:14px; color:#555;">Click below to view additional account details or view payment history</p>
+          <p style="text-align: center; margin: 0 0 12px 0; font-size:14px; color:#555;">[Sign in to make future payments or update your payment information]</p>
           <div style="text-align: center;">
             <a class="button" href="#">Go to My Account</a>
             <p style="font-size:14px; color:#555; margin:8px 0 0; font:500 14px/1.5 Arial, Helvetica, sans-serif;">Account Number: <span style="font-weight:400; color:#555;">{Portfolio}-{Account Number}</span></p>
